@@ -27,19 +27,19 @@ int main() {
             continue;
         }
         months month = static_cast<months> (num);
-        switch (static_cast<int>(month)) {
-        case 1: std::cout << "Январь." << std::endl; break;
-        case 2: std::cout << "Февраль." << std::endl; break;
-        case 3: std::cout << "Март." << std::endl; break;
-        case 4: std::cout << "Апрель." << std::endl; break;
-        case 5: std::cout << "Май." << std::endl; break;
-        case 6: std::cout << "Июнь." << std::endl; break;
-        case 7: std::cout << "Июль." << std::endl; break;
-        case 8: std::cout << "Август." << std::endl; break;
-        case 9: std::cout << "Сентябрь." << std::endl; break;
-        case 10: std::cout << "Октябрь." << std::endl; break;
-        case 11: std::cout << "Ноябрь." << std::endl; break;
-        case 12: std::cout << "Декабрь." << std::endl; break;
+        switch (month) {
+        case months::Январь: std::cout << "Январь." << std::endl; break;
+        case months::Февраль: std::cout << "Февраль." << std::endl; break;
+        case months::Март: std::cout << "Март." << std::endl; break;
+        case months::Апрель: std::cout << "Апрель." << std::endl; break;
+        case months::Май: std::cout << "Май." << std::endl; break;
+        case months::Июнь: std::cout << "Июнь." << std::endl; break;
+        case months::Июль: std::cout << "Июль." << std::endl; break;
+        case months::Август: std::cout << "Август." << std::endl; break;
+        case months::Сентябрь: std::cout << "Сентябрь." << std::endl; break;
+        case months::Октябрь: std::cout << "Октябрь." << std::endl; break;
+        case months::Ноябрь: std::cout << "Ноябрь." << std::endl; break;
+        case months::Декабрь: std::cout << "Декабрь." << std::endl; break;
         }
     } while (num != 0);
     std::cout << "До свидания." << std::endl;
